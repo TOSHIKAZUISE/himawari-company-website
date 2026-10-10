@@ -9,7 +9,7 @@
 | `index.html` | トップページ（お客様向け） |
 | `company.html` | 会社概要ページ（お取引先様向け） |
 | `css/style.css` | 見た目（色・文字・レイアウト）の設定 |
-| `js/main.js` | スクロールしたときの、ふわっと表示する動き |
+| `js/main.js` | スマホのメニュー、スクロールしたときのふわっと表示する動き |
 | `images/` | 写真のフォルダ（下の一覧を参照） |
 | `.nojekyll` | GitHub Pages 用の設定ファイル（消さないでください） |
 
@@ -20,9 +20,9 @@
 
 | ファイル名 | 使われる場所 | 形・大きさ |
 | --- | --- | --- |
-| `hero.jpg` | トップ一番上（パソコン） | 横長 2400×1600px |
-| `hero-sp.jpg` | トップ一番上（スマホ） | 縦長 1200×1800px |
-| `about.jpg` | トップ「CONCEPT」の写真 | 縦長 1200×1500px |
+| `hero.jpg` | トップの社名の横の写真（パソコン） | 縦長 1600×1800px |
+| `hero-sp.jpg` | トップの社名の下の写真（スマホ）・お問い合わせ欄の背景 | 縦長 1200×1400px |
+| `about.jpg` | トップ「コンセプト」の写真 | 縦長 1200×1500px |
 | `product-food.jpg` | 取扱商品「食品」 | 縦長 1000×1250px |
 | `product-beauty.jpg` | 取扱商品「美容品」 | 縦長 1000×1250px |
 | `product-supplement.jpg` | 取扱商品「サプリメント」 | 縦長 1000×1250px |
@@ -30,7 +30,7 @@
 | `feature-shipping.jpg` | お約束 01「当日発送」 | 横長 1400×1050px |
 | `feature-packing.jpg` | お約束 02「丁寧な梱包」 | 横長 1400×1050px |
 | `feature-quality.jpg` | お約束 03「品揃えと品質」 | 横長 1400×1050px |
-| `company-header.jpg` | 会社概要ページの一番上 | 横長 2400×900px |
+| `company-header.jpg` | 会社概要ページの一番上 | 横長 2400×1000px |
 
 ポイント
 
@@ -54,9 +54,10 @@
 
 | ファイル名 | 撮影者 | 写真のページ |
 | --- | --- | --- |
-| `hero.jpg` / `hero-sp.jpg` | Todd Trapani | https://www.pexels.com/photo/yellow-sunflower-field-under-blue-sky-and-white-clouds-5241874/ |
-| `company-header.jpg` | K Zoltan | https://www.pexels.com/photo/sunflower-garden-under-blue-sky-544554/ |
-| `about.jpg` | Carl Davis | https://www.pexels.com/photo/a-close-up-shot-of-a-sunflower-7740559/ |
+| `hero.jpg` | Petr Ganaj | https://www.pexels.com/photo/close-up-of-a-sunflower-against-blue-sky-18293934/ |
+| `hero-sp.jpg` | Chris F | https://www.pexels.com/photo/close-up-shot-of-a-sunflower-in-bloom-9272181/ |
+| `company-header.jpg` | Freek Wolsink | https://www.pexels.com/photo/bright-sunflower-under-clear-blue-sky-35901036/ |
+| `about.jpg` | Tetyana Kovyrina | https://www.pexels.com/photo/photo-of-sunflowers-in-a-white-vase-13446290/ |
 | `product-food.jpg` | horst | https://www.pexels.com/photo/two-decorative-jars-3066951/ |
 | `product-beauty.jpg` | Roman Odintsov | https://www.pexels.com/photo/relaxation-luxury-bathroom-soap-7691112/ |
 | `product-supplement.jpg` | Supplements On Demand | https://www.pexels.com/photo/capsules-in-the-plastic-bottle-13787561/ |

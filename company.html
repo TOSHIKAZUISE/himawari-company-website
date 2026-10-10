@@ -23,13 +23,21 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="ひまわりカンパニー トップへ">
-        <span class="brand-en">HIMAWARI COMPANY</span>
         <span class="brand-ja">ひまわりカンパニー</span>
+        <span class="brand-en">HIMAWARI COMPANY</span>
       </a>
-      <nav class="global-nav" aria-label="メインメニュー">
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav">
+        <span class="menu-button-lines" aria-hidden="true"></span>
+        <span class="menu-button-text">MENU</span>
+      </button>
+      <nav class="global-nav" id="global-nav" aria-label="メインメニュー">
         <ul>
+          <li><a href="index.html#concept">コンセプト</a></li>
+          <li><a href="index.html#products">取扱商品</a></li>
+          <li><a href="index.html#promise">お約束</a></li>
           <li><a href="index.html#shops">ショップ</a></li>
           <li><a href="company.html" aria-current="page">会社概要</a></li>
+          <li class="nav-contact"><a href="company.html#contact">お問い合わせ</a></li>
         </ul>
       </nav>
     </div>
@@ -47,9 +55,9 @@
     </section>
 
     <!-- 経営理念 -->
-    <section class="section" id="philosophy">
+    <section class="section section-sand" id="philosophy">
       <div class="container narrow philosophy">
-        <div class="section-head">
+        <div class="section-head center">
           <p class="label reveal">Philosophy</p>
           <h2 class="section-title reveal reveal-delay-1">経営理念</h2>
         </div>
@@ -65,7 +73,7 @@
     </section>
 
     <!-- 会社情報 -->
-    <section class="section section-ivory" id="profile">
+    <section class="section" id="profile">
       <div class="container narrow">
         <div class="section-head center">
           <p class="label reveal">Profile</p>
@@ -101,11 +109,14 @@
             <dd>Yahoo!ショッピングや楽天市場を中心としたECモールでのオンライン販売を軸とした物販業務。<br>主な取扱商材は食品・美容品・サプリメント等。</dd>
           </div>
         </dl>
+        <div class="map map-wide reveal-photo">
+          <iframe src="https://www.google.com/maps?q=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E5%B9%B3%E5%A1%9A%E5%B8%82%E5%B1%B1%E4%B8%8B2%E4%B8%81%E7%9B%AE14%E7%95%AA5%E5%8F%B7&amp;output=embed" title="ひまわりカンパニーの地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </section>
 
     <!-- 沿革 -->
-    <section class="section" id="history">
+    <section class="section section-sand" id="history">
       <div class="container narrow">
         <div class="section-head center">
           <p class="label reveal">History</p>
@@ -129,7 +140,7 @@
     </section>
 
     <!-- 出店中のショップ -->
-    <section class="section section-ivory stores" id="stores">
+    <section class="section stores" id="stores">
       <div class="container narrow">
         <div class="section-head center">
           <p class="label reveal">Online Store</p>
@@ -145,14 +156,13 @@
     </section>
 
     <!-- お取引・仕入れに関するお問い合わせ -->
-    <section class="section" id="contact">
-      <div class="container narrow">
-        <div class="section-head center">
-          <p class="label reveal">Contact</p>
-          <h2 class="section-title reveal reveal-delay-1">お取引・仕入れに関する<br>お問い合わせ</h2>
-        </div>
-        <p class="contact-text reveal">メーカー様・問屋様からのお取引のご相談、<br>仕入れに関するお問い合わせは、<br>メールまたはお電話にてお気軽にご連絡ください。</p>
-        <div class="contact-actions reveal">
+    <section class="contact-band" id="contact">
+      <img class="contact-band-image" src="images/hero-sp.jpg" alt="" width="1200" height="1400" loading="lazy">
+      <div class="container contact-band-inner">
+        <p class="label reveal">Contact</p>
+        <h2 class="section-title reveal reveal-delay-1">お取引・仕入れに関する<br>お問い合わせ</h2>
+        <p class="contact-text reveal reveal-delay-2">メーカー様・問屋様からのお取引のご相談、仕入れに関するお問い合わせは、<br class="pc-only">メールまたはお電話にてお気軽にご連絡ください。</p>
+        <div class="contact-actions reveal reveal-delay-3">
           <a class="contact-btn" href="mailto:himawari-company@e-mail.jp?subject=%E3%81%8A%E5%8F%96%E5%BC%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">
             <span class="contact-btn-label">E-MAIL</span>
             <span class="contact-btn-value">himawari-company@e-mail.jp</span>
@@ -173,8 +183,8 @@
       <div class="footer-grid">
         <div>
           <p class="footer-brand">
-            <span class="brand-en">HIMAWARI COMPANY</span>
             <span class="brand-ja">ひまわりカンパニー</span>
+            <span class="brand-en">HIMAWARI COMPANY</span>
           </p>
           <address class="footer-info">
             〒254-0911 神奈川県平塚市山下2丁目14番5号<br>

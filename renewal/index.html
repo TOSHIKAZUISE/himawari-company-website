@@ -393,7 +393,10 @@ body.menu-open { overflow: hidden; }
 .company-table td { padding-bottom: 16px; border-bottom: 1px solid var(--line); color: var(--text); }
 .company-table .tbd { color: var(--yellow-deep); font-weight: 700; }
 .company-side .ph { min-height: 260px; }
-.company-side .map-note { margin: 8px 0 0; color: var(--gray); font-size: 0.8rem; }
+.access { margin-top: 18px; padding: 22px 22px 24px; border-radius: var(--radius); background: var(--white); }
+.access-title { display: flex; align-items: center; gap: 8px; margin: 0 0 6px; color: var(--yellow-deep); font-family: var(--en); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.16em; }
+.access-text { margin: 0 0 16px; color: var(--text); font-size: 0.92rem; line-height: 1.8; }
+.access-btn { padding: 11px 22px; font-size: 0.88rem; }
 
 /* ---------- Contact ---------- */
 .contact {
@@ -814,10 +817,10 @@ body.menu-open { overflow: hidden; }
       <ul class="numbers">
         <li class="number fade"><svg class="sun" aria-hidden="true"><use href="#sunflower"/></svg><span class="number-label">取扱商品数</span><span class="number-value" data-count="3000">3,000<small>点以上</small></span></li>
         <li class="number fade d1"><svg class="sun" aria-hidden="true"><use href="#sunflower"/></svg><span class="number-label">累計レビュー件数</span><span class="number-value" data-count="10000">10,000<small>件以上</small></span></li>
-        <li class="number fade d2"><svg class="sun" aria-hidden="true"><use href="#sunflower"/></svg><span class="number-label">年間出荷件数</span><span class="number-value" data-count="50000">50,000<small>件以上</small></span></li>
+        <li class="number fade d2"><svg class="sun" aria-hidden="true"><use href="#sunflower"/></svg><span class="number-label">年間出荷件数</span><span class="number-value" data-count="20000"><small>約</small>20,000<small>件</small></span></li>
         <li class="number fade d3"><svg class="sun" aria-hidden="true"><use href="#sunflower"/></svg><span class="number-label">出店ECモール</span><span class="number-value" data-count="4">4<small>モール</small></span></li>
       </ul>
-      <p class="numbers-note">※数値は仮のものです。【〇〇年〇月時点】の実績に差し替えてください。</p>
+      <p class="numbers-note">※年間出荷件数は1日あたり約50件からの目安です。取扱商品数・累計レビュー件数は仮の数値です。</p>
     </div>
   </section>
 
@@ -868,20 +871,23 @@ body.menu-open { overflow: hidden; }
       <div class="company">
         <table class="company-table fade d1">
           <tbody>
-            <tr><th scope="row">社名</th><td>ひまわりカンパニー <span class="tbd">【法人名：株式会社〇〇】</span></td></tr>
+            <tr><th scope="row">屋号</th><td>ひまわりカンパニー</td></tr>
             <tr><th scope="row">代表者</th><td>伊勢 寿一</td></tr>
             <tr><th scope="row">設立</th><td>2017年1月</td></tr>
             <tr><th scope="row">所在地</th><td>〒254-0911<br>神奈川県平塚市山下2丁目14番5号</td></tr>
             <tr><th scope="row">TEL / FAX</th><td><a href="tel:0463642647">0463-64-2647</a></td></tr>
             <tr><th scope="row">E-mail</th><td><a href="mailto:himawari-company@e-mail.jp">himawari-company@e-mail.jp</a></td></tr>
             <tr><th scope="row">事業内容</th><td>ECモール（楽天市場・Amazon・Yahoo!ショッピング・メルカリShops）を中心としたオンライン販売<br>化粧品・サプリメント・日用品・食品などの仕入れ・販売</td></tr>
-            <tr><th scope="row">年商</th><td><span class="tbd">【〇億円】</span>（〇〇年〇月期）</td></tr>
-            <tr><th scope="row">スタッフ数</th><td><span class="tbd">【〇名】</span></td></tr>
+            <tr><th scope="row">アクセス</th><td>JR東海道線「平塚」駅北口から神奈中バス（平29系統 ほか）で約15分<br>「山下団地入口」バス停下車 徒歩約5分</td></tr>
           </tbody>
         </table>
         <div class="company-side fade d2">
-          <div class="ph"><svg aria-hidden="true"><use href="#camera"/></svg>写真：外観・エントランス<small>または地図（Googleマップ）</small></div>
-          <p class="map-note">JR東海道線「平塚」駅より【アクセス情報が入ります】</p>
+          <div class="ph"><svg aria-hidden="true"><use href="#camera"/></svg>写真：外観・エントランス<small>事務所の外観や入口</small></div>
+          <div class="access">
+            <p class="access-title">ACCESS</p>
+            <p class="access-text">JR東海道線「平塚」駅 北口バスのりばから<br>神奈中バス（平29系統 ほか）で約15分<br>「山下団地入口」バス停下車 徒歩約5分</p>
+            <a class="btn btn--ghost access-btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E5%B9%B3%E5%A1%9A%E5%B8%82%E5%B1%B1%E4%B8%8B2%E4%B8%81%E7%9B%AE14%E7%95%AA5%E5%8F%B7" target="_blank" rel="noopener">Googleマップで見る <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
         </div>
       </div>
     </div>
@@ -993,7 +999,7 @@ body.menu-open { overflow: hidden; }
     <img class="photo" src="images/office.jpg" alt="オフィスの様子" loading="lazy">
   （枠の大きさはそのまま使えます）
 
-■ 【 】で囲んだところは仮の内容です。正式な情報に差し替えてください。
+■ 取扱商品数・累計レビュー件数は仮の数値です。正式な数値に差し替えてください。
 ==============================================================
 -->
 </body>

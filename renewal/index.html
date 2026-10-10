@@ -87,8 +87,19 @@ a { color: inherit; }
 .ph small { display: block; font-size: 0.72rem; font-weight: 400; opacity: 0.8; }
 .ph--sun { background: repeating-linear-gradient(135deg, rgba(255,255,255,0.45) 0 14px, rgba(255,255,255,0) 14px 28px), #ffe39a; color: #6b4f00; }
 .ph--navy { background: repeating-linear-gradient(135deg, rgba(255,255,255,0.06) 0 14px, rgba(255,255,255,0) 14px 28px), #34436a; color: #d9def0; }
-/* 本物の写真を入れたときの共通スタイル */
-.photo { width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius); }
+/* 写真 */
+.photo { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius); }
+.collage > div:not(.collage-badge) { overflow: hidden; border-radius: var(--radius); }
+.collage .c-sun .photo { border-radius: 120px 24px 24px 24px; }
+.mv-photo { min-height: 320px; height: 100%; }
+.mv-photo .photo { border-radius: 24px 120px 24px 24px; min-height: 320px; }
+.card-photo { aspect-ratio: 3 / 2; }
+.card-photo .photo { border-radius: 0; }
+.wide-photo { width: 100%; aspect-ratio: 3 / 2; }
+@media (min-width: 768px) { .wide-photo { aspect-ratio: 18 / 7; } }
+.side-photo { aspect-ratio: 5 / 4; }
+.gallery figure > .photo { aspect-ratio: 4 / 3; height: auto; }
+.gallery .g1 > .photo { flex: 1; min-height: 220px; aspect-ratio: auto; }
 
 /* ---------- ボタン ---------- */
 .btn {
@@ -486,7 +497,7 @@ body.menu-open { overflow: hidden; }
   .sec-en { font-size: 2.5rem; }
   .lead-title { font-size: 2rem; }
   .mission { grid-template-columns: 1fr 1fr; gap: 80px; }
-  .mission-visual .ph { min-height: 460px; }
+  .mission-visual .mv-photo .photo { min-height: 460px; }
   .business { grid-template-columns: 0.9fr 1.1fr; gap: 56px; }
   .business-illust { position: sticky; top: 120px; }
   .stores { grid-template-columns: repeat(4, 1fr); }
@@ -574,9 +585,9 @@ body.menu-open { overflow: hidden; }
       </div>
 
       <div class="collage fade d2">
-        <div class="ph ph--sun c-sun"><svg aria-hidden="true"><use href="#camera"/></svg>写真：ひまわり<small>青空と咲くひまわり（縦長）</small></div>
-        <div class="ph c-office"><svg aria-hidden="true"><use href="#camera"/></svg>写真：オフィス<small>PCでショップを運営</small></div>
-        <div class="ph c-items"><svg aria-hidden="true"><use href="#camera"/></svg>写真：取扱商品<small>化粧品・サプリ・日用品</small></div>
+        <div class="c-sun"><img class="photo" src="images/hero-sunflowers.jpg" alt="青空の下に咲くひまわり"></div>
+        <div class="c-office"><img class="photo" src="images/hero-office.jpg" alt="パソコンでショップを運営する様子"></div>
+        <div class="c-items"><img class="photo" src="images/hero-items.jpg" alt="スキンケア商品のイメージ"></div>
         <div class="collage-badge"><svg class="sun" style="font-size:30px" aria-hidden="true"><use href="#sunflower"/></svg><span><strong>12:00</strong>までのご注文は当日発送</span></div>
         <!-- イラスト：スマホでお買い物 -->
         <svg class="collage-phone" viewBox="0 0 120 200" aria-hidden="true">
@@ -629,7 +640,7 @@ body.menu-open { overflow: hidden; }
         <p class="body-text fade d2">同時に、生産者保護とブランド維持のための価格順守や販路の徹底、2次流通品の排除を掲げ、お取引先の企業様と信頼で結ばれたWin-Winの関係を築いていきます。</p>
       </div>
       <div class="mission-visual fade d2">
-        <div class="ph ph--sun"><svg aria-hidden="true"><use href="#camera"/></svg>写真：ひまわり＋スタッフ<small>ひまわりと、スタッフの後ろ姿や手元</small></div>
+        <div class="mv-photo"><img class="photo" src="images/mission.jpg" alt="ひまわりを生けた花瓶を手に持つスタッフ" loading="lazy"></div>
         <p class="mission-quote"><svg class="sun" aria-hidden="true"><use href="#sunflower"/></svg>お客様とお取引先様に、<br>喜んでいただくことがモットーです。</p>
       </div>
     </div>
@@ -647,7 +658,7 @@ body.menu-open { overflow: hidden; }
       </div>
       <ul class="about-grid">
         <li class="about-card fade">
-          <div class="ph"><svg aria-hidden="true"><use href="#camera"/></svg>写真：出荷作業<small>段ボールに詰めて発送するところ</small></div>
+          <div class="card-photo"><img class="photo" src="images/about-shipping.jpg" alt="出荷を待つ段ボール箱" loading="lazy"></div>
           <div class="about-card-body">
             <span class="about-card-num">POINT 01</span>
             <h3>12時までのご注文は、当日発送</h3>
@@ -655,7 +666,7 @@ body.menu-open { overflow: hidden; }
           </div>
         </li>
         <li class="about-card fade d1">
-          <div class="ph"><svg aria-hidden="true"><use href="#camera"/></svg>写真：検品・梱包<small>商品を丁寧に包む手元</small></div>
+          <div class="card-photo"><img class="photo" src="images/about-packing.jpg" alt="商品を丁寧に梱包する手元" loading="lazy"></div>
           <div class="about-card-body">
             <span class="about-card-num">POINT 02</span>
             <h3>ひとつひとつ、丁寧な梱包</h3>
@@ -663,7 +674,7 @@ body.menu-open { overflow: hidden; }
           </div>
         </li>
         <li class="about-card fade d2">
-          <div class="ph"><svg aria-hidden="true"><use href="#camera"/></svg>写真：商品が並んだ棚<small>化粧品・サプリ・日用品</small></div>
+          <div class="card-photo"><img class="photo" src="images/about-items.jpg" alt="取扱商品のイメージ" loading="lazy"></div>
           <div class="about-card-body">
             <span class="about-card-num">POINT 03</span>
             <h3>多彩な品揃えと、高品質な商品</h3>
@@ -785,7 +796,7 @@ body.menu-open { overflow: hidden; }
         </li>
       </ul>
       <div class="category-photo fade">
-        <div class="ph"><svg aria-hidden="true"><use href="#camera"/></svg>写真：取扱商品の集合写真<small>化粧品・サプリメント・日用品が並んだ横長の写真</small></div>
+        <div class="wide-photo"><img class="photo" src="images/category.jpg" alt="化粧品・日用品のイメージ" loading="lazy"></div>
       </div>
     </div>
   </section>
@@ -815,12 +826,12 @@ body.menu-open { overflow: hidden; }
         <p class="sec-ja">数字で見るひまわりカンパニー</p>
       </div>
       <ul class="numbers">
-        <li class="number fade"><svg class="sun" aria-hidden="true"><use href="#sunflower"/></svg><span class="number-label">取扱商品数</span><span class="number-value" data-count="3000">3,000<small>点以上</small></span></li>
-        <li class="number fade d1"><svg class="sun" aria-hidden="true"><use href="#sunflower"/></svg><span class="number-label">累計レビュー件数</span><span class="number-value" data-count="10000">10,000<small>件以上</small></span></li>
+        <li class="number fade"><svg class="sun" aria-hidden="true"><use href="#sunflower"/></svg><span class="number-label">取扱商品数</span><span class="number-value" data-count="500">500<small>点以上</small></span></li>
+        <li class="number fade d1"><svg class="sun" aria-hidden="true"><use href="#sunflower"/></svg><span class="number-label">累計レビュー件数</span><span class="number-value" data-count="1000">1,000<small>件以上</small></span></li>
         <li class="number fade d2"><svg class="sun" aria-hidden="true"><use href="#sunflower"/></svg><span class="number-label">年間出荷件数</span><span class="number-value" data-count="20000"><small>約</small>20,000<small>件</small></span></li>
         <li class="number fade d3"><svg class="sun" aria-hidden="true"><use href="#sunflower"/></svg><span class="number-label">出店ECモール</span><span class="number-value" data-count="4">4<small>モール</small></span></li>
       </ul>
-      <p class="numbers-note">※年間出荷件数は1日あたり約50件からの目安です。取扱商品数・累計レビュー件数は仮の数値です。</p>
+      <p class="numbers-note">※数値はおおよその目安です（年間出荷件数は1日あたり約50件から算出）。</p>
     </div>
   </section>
 
@@ -832,11 +843,11 @@ body.menu-open { overflow: hidden; }
         <p class="sec-ja">オフィス紹介</p>
       </div>
       <div class="gallery">
-        <figure class="g1 fade"><div class="ph"><svg aria-hidden="true"><use href="#camera"/></svg>写真：オフィスの様子<small>デスクでPC作業、ショップ運営</small></div></figure>
-        <figure class="fade d1"><div class="ph"><svg aria-hidden="true"><use href="#camera"/></svg>写真：検品</div><figcaption>入荷した商品を検品</figcaption></figure>
-        <figure class="fade d1"><div class="ph"><svg aria-hidden="true"><use href="#camera"/></svg>写真：梱包</div><figcaption>ひとつずつ丁寧に梱包</figcaption></figure>
-        <figure class="fade d2"><div class="ph"><svg aria-hidden="true"><use href="#camera"/></svg>写真：出荷</div><figcaption>12時までのご注文は当日出荷</figcaption></figure>
-        <figure class="fade d2"><div class="ph ph--sun"><svg aria-hidden="true"><use href="#camera"/></svg>写真：スタッフ</div><figcaption>スタッフ（後ろ姿・手元）</figcaption></figure>
+        <figure class="g1 fade"><img class="photo" src="images/office-main.jpg" alt="パソコンと商品に囲まれたオフィスでの作業" loading="lazy"></figure>
+        <figure class="fade d1"><img class="photo" src="images/office-check.jpg" alt="入荷した商品の検品" loading="lazy"><figcaption>入荷した商品を検品</figcaption></figure>
+        <figure class="fade d1"><img class="photo" src="images/office-packing.jpg" alt="商品の梱包作業" loading="lazy"><figcaption>ひとつずつ丁寧に梱包</figcaption></figure>
+        <figure class="fade d2"><img class="photo" src="images/office-shipping.jpg" alt="出荷前の伝票チェック" loading="lazy"><figcaption>出荷前の伝票チェック</figcaption></figure>
+        <figure class="fade d2"><img class="photo" src="images/office-staff.jpg" alt="パソコンで作業するスタッフ" loading="lazy"><figcaption>ショップ運営・お問い合わせ対応</figcaption></figure>
       </div>
     </div>
   </section>
@@ -882,7 +893,7 @@ body.menu-open { overflow: hidden; }
           </tbody>
         </table>
         <div class="company-side fade d2">
-          <div class="ph"><svg aria-hidden="true"><use href="#camera"/></svg>写真：外観・エントランス<small>事務所の外観や入口</small></div>
+          <div class="side-photo"><img class="photo" src="images/company.jpg" alt="事務所の窓辺に飾ったひまわり" loading="lazy"></div>
           <div class="access">
             <p class="access-title">ACCESS</p>
             <p class="access-text">JR東海道線「平塚」駅 北口バスのりばから<br>神奈中バス（平29系統 ほか）で約15分<br>「山下団地入口」バス停下車 徒歩約5分</p>
@@ -994,12 +1005,7 @@ body.menu-open { overflow: hidden; }
        えらぶ楽しさと、届く安心を。あなたのそばに。
   → 差し替えるときは、<h1 class="hero-catch"> と <p class="hero-sub"> の文字を書き換えます。
 
-■ 写真の差し替え方
-  「写真：〇〇」と書かれた <div class="ph ...">〜</div> を、次のような img に置き換えます。
-    <img class="photo" src="images/office.jpg" alt="オフィスの様子" loading="lazy">
-  （枠の大きさはそのまま使えます）
-
-■ 取扱商品数・累計レビュー件数は仮の数値です。正式な数値に差し替えてください。
+■ 写真は Pexels の無料写真（仮）です。出典は renewal/README.md を参照。自社の写真に差し替える場合は images フォルダの同じ名前で上書きしてください。
 ==============================================================
 -->
 </body>

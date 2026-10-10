@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>会社概要｜ひまわりカンパニー</title>
   <meta name="description" content="ひまわりカンパニーの会社概要です。神奈川県平塚市を拠点に、楽天市場・Yahoo!ショッピング・Amazon・メルカリShopsでのオンライン販売を行っています。お取引・仕入れに関するお問い合わせもこちらから。">
-  <meta name="theme-color" content="#fdfbf6">
+  <meta name="theme-color" content="#faf8f4">
   <meta property="og:type" content="website">
   <meta property="og:title" content="会社概要｜ひまわりカンパニー">
   <meta property="og:description" content="ECモールでのオンライン販売を軸とした物販業務を行っています。">
@@ -13,14 +13,19 @@
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Shippori+Mincho:wght@500&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap">
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">ひまわりカンパニー</a>
+      <a class="brand" href="index.html" aria-label="ひまわりカンパニー トップへ">
+        <span class="brand-en">HIMAWARI COMPANY</span>
+        <span class="brand-ja">ひまわりカンパニー</span>
+      </a>
       <nav class="global-nav" aria-label="メインメニュー">
         <ul>
           <li><a href="index.html#shops">ショップ</a></li>
@@ -34,26 +39,24 @@
 
     <!-- 上部の横長のひまわり写真 -->
     <section class="page-hero">
-      <img class="page-hero-image" src="images/company-header.jpg" alt="一面に咲くひまわり" width="2400" height="900" fetchpriority="high">
+      <img class="page-hero-image" src="images/company-header.jpg" alt="青空の下に広がるひまわり畑" width="2400" height="900" fetchpriority="high">
       <div class="container page-hero-text">
-        <p>COMPANY</p>
+        <p class="label">Company</p>
         <h1>会社概要</h1>
       </div>
     </section>
 
     <!-- 経営理念 -->
     <section class="section" id="philosophy">
-      <div class="container narrow">
+      <div class="container narrow philosophy">
         <div class="section-head">
-          <span class="section-en">PHILOSOPHY</span>
-          <h2 class="section-title">経営理念</h2>
+          <p class="label reveal">Philosophy</p>
+          <h2 class="section-title reveal reveal-delay-1">経営理念</h2>
         </div>
-        <div class="philosophy">
-          <p class="lead">販売を通じて、<br>お客様とお取引先の企業様に<br>喜んでいただくこと。</p>
-          <p>販売を通じて、お客様とお取引先の企業様に喜んでいただくことをモットーに活動しています。お客様一人ひとりに真摯に向き合い、より良い商品をいち早く、丁寧な梱包でお届けできるよう日々努めています。</p>
-          <p>また、生産者保護とブランド維持のための価格順守や販路の徹底、2次流通品の排除などを掲げ、お取引先の企業様に信用していただき、Win-Winの関係を築くことを第一に考えています。</p>
-        </div>
-        <ul class="policy-list">
+        <p class="lead reveal">販売を通じて、<br>お客様とお取引先の企業様に<br>喜んでいただくこと。</p>
+        <p class="text reveal">販売を通じて、お客様とお取引先の企業様に喜んでいただくことをモットーに活動しています。お客様一人ひとりに真摯に向き合い、より良い商品をいち早く、丁寧な梱包でお届けできるよう日々努めています。</p>
+        <p class="text reveal">また、生産者保護とブランド維持のための価格順守や販路の徹底、2次流通品の排除などを掲げ、お取引先の企業様に信用していただき、Win-Winの関係を築くことを第一に考えています。</p>
+        <ul class="policy-list reveal">
           <li>価格の順守</li>
           <li>販路の徹底</li>
           <li>2次流通品の排除</li>
@@ -62,13 +65,13 @@
     </section>
 
     <!-- 会社情報 -->
-    <section class="section section-cream" id="profile">
+    <section class="section section-ivory" id="profile">
       <div class="container narrow">
-        <div class="section-head">
-          <span class="section-en">PROFILE</span>
-          <h2 class="section-title">会社情報</h2>
+        <div class="section-head center">
+          <p class="label reveal">Profile</p>
+          <h2 class="section-title reveal reveal-delay-1">会社情報</h2>
         </div>
-        <dl class="info-list">
+        <dl class="info-list reveal">
           <div class="info-row">
             <dt>屋号</dt>
             <dd>ひまわりカンパニー</dd>
@@ -104,21 +107,21 @@
     <!-- 沿革 -->
     <section class="section" id="history">
       <div class="container narrow">
-        <div class="section-head">
-          <span class="section-en">HISTORY</span>
-          <h2 class="section-title">沿革</h2>
+        <div class="section-head center">
+          <p class="label reveal">History</p>
+          <h2 class="section-title reveal reveal-delay-1">沿革</h2>
         </div>
-        <ol class="history">
+        <ol class="history reveal">
           <li>
-            <time datetime="2017-01">2017年1月</time>
+            <time datetime="2017-01">2017.01</time>
             <p>個人事業主として活動を開始<br>Amazonに出店</p>
           </li>
           <li>
-            <time datetime="2018-03">2018年3月</time>
+            <time datetime="2018-03">2018.03</time>
             <p>Yahoo!ショッピングに出店</p>
           </li>
           <li>
-            <time datetime="2020-05">2020年5月</time>
+            <time datetime="2020-05">2020.05</time>
             <p>楽天市場に出店</p>
           </li>
         </ol>
@@ -126,13 +129,13 @@
     </section>
 
     <!-- 出店中のショップ -->
-    <section class="section section-cream" id="stores">
+    <section class="section section-ivory stores" id="stores">
       <div class="container narrow">
-        <div class="section-head">
-          <span class="section-en">ONLINE STORE</span>
-          <h2 class="section-title">出店中のショップ</h2>
+        <div class="section-head center">
+          <p class="label reveal">Online Store</p>
+          <h2 class="section-title reveal reveal-delay-1">出店中のショップ</h2>
         </div>
-        <ul class="shop-links">
+        <ul class="shop-links reveal">
           <li><a class="shop-link" href="https://www.rakuten.co.jp/himawari-company/" target="_blank" rel="noopener">楽天市場</a></li>
           <li><a class="shop-link" href="https://store.shopping.yahoo.co.jp/himawari-company/" target="_blank" rel="noopener">Yahoo!ショッピング</a></li>
           <li><a class="shop-link" href="https://www.amazon.co.jp/s?me=A3NV0EKBFBU47O&amp;marketplaceID=A1VC38T7YXB528" target="_blank" rel="noopener">Amazon</a></li>
@@ -144,18 +147,18 @@
     <!-- お取引・仕入れに関するお問い合わせ -->
     <section class="section" id="contact">
       <div class="container narrow">
-        <div class="section-head">
-          <span class="section-en">CONTACT</span>
-          <h2 class="section-title">お取引・仕入れに関する<br>お問い合わせ</h2>
+        <div class="section-head center">
+          <p class="label reveal">Contact</p>
+          <h2 class="section-title reveal reveal-delay-1">お取引・仕入れに関する<br>お問い合わせ</h2>
         </div>
-        <p class="contact-text">メーカー様・問屋様からのお取引のご相談、<br>仕入れに関するお問い合わせは、<br>メールまたはお電話にてお気軽にご連絡ください。</p>
-        <div class="contact-actions">
+        <p class="contact-text reveal">メーカー様・問屋様からのお取引のご相談、<br>仕入れに関するお問い合わせは、<br>メールまたはお電話にてお気軽にご連絡ください。</p>
+        <div class="contact-actions reveal">
           <a class="contact-btn" href="mailto:himawari-company@e-mail.jp?subject=%E3%81%8A%E5%8F%96%E5%BC%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">
-            <span class="contact-btn-label">E-mail</span>
+            <span class="contact-btn-label">E-MAIL</span>
             <span class="contact-btn-value">himawari-company@e-mail.jp</span>
           </a>
           <a class="contact-btn" href="tel:0463642647">
-            <span class="contact-btn-label">TEL/FAX</span>
+            <span class="contact-btn-label">TEL / FAX</span>
             <span class="contact-btn-value">0463-64-2647</span>
           </a>
         </div>
@@ -169,12 +172,14 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <p class="footer-name">ひまわりカンパニー</p>
+          <p class="footer-brand">
+            <span class="brand-en">HIMAWARI COMPANY</span>
+            <span class="brand-ja">ひまわりカンパニー</span>
+          </p>
           <address class="footer-info">
-            〒254-0911<br>
-            神奈川県平塚市山下2丁目14番5号<br>
-            TEL/FAX：<a href="tel:0463642647">0463-64-2647</a><br>
-            E-mail：<a href="mailto:himawari-company@e-mail.jp">himawari-company@e-mail.jp</a>
+            〒254-0911 神奈川県平塚市山下2丁目14番5号<br>
+            TEL/FAX <a href="tel:0463642647">0463-64-2647</a><br>
+            E-mail <a href="mailto:himawari-company@e-mail.jp">himawari-company@e-mail.jp</a>
           </address>
         </div>
         <div>

@@ -9,63 +9,63 @@
 | `index.html` | トップページ（お客様向け） |
 | `company.html` | 会社概要ページ（お取引先様向け） |
 | `css/style.css` | 見た目（色・文字・レイアウト）の設定 |
-| `images/` | 写真を入れるフォルダ（下の一覧を参照） |
+| `js/main.js` | スクロールしたときの、ふわっと表示する動き |
+| `images/` | 写真のフォルダ（下の一覧を参照） |
 | `.nojekyll` | GitHub Pages 用の設定ファイル（消さないでください） |
 
-## 写真の入れ替え方
+## 写真の一覧と差し替え方
 
-いま `images` フォルダに入っている写真は、**「仮の写真（差し替えてください）」と書かれた仮の画像**です。
-下の表と**同じファイル名**の写真で上書きするだけで、ホームページに反映されます（HTML の書き換えは不要です）。
+写真は下の表の**ファイル名**で `images` フォルダに入っています。
+同じファイル名の写真で上書きするだけで、ホームページに反映されます（HTML の書き換えは不要です）。
 
-| ファイル名 | 使われる場所 | 入れてほしい写真 | 形・目安の大きさ |
-| --- | --- | --- | --- |
-| `hero.jpg` | トップ一番上（画面いっぱい） | 青空とひまわり畑。明るく開放的なもの | 横長 2400×1500px |
-| `about.jpg` | トップ「ABOUT」の左 | ひまわり一輪のアップ | 縦長 1200×1500px |
-| `product-food.jpg` | 取扱商品「食品」 | 自社の食品の商品写真 | 正方形 1200×1200px |
-| `product-beauty.jpg` | 取扱商品「美容品」 | 自社の美容品の商品写真 | 正方形 1200×1200px |
-| `product-supplement.jpg` | 取扱商品「サプリメント」 | 自社のサプリメントの商品写真 | 正方形 1200×1200px |
-| `product-daily.jpg` | 取扱商品「日用品」 | 自社の日用品の商品写真 | 正方形 1200×1200px |
-| `feature-shipping.jpg` | お約束 01「当日発送」 | 出荷を待つ段ボール、発送作業の様子 | 横長 1600×1200px |
-| `feature-packing.jpg` | お約束 02「丁寧な梱包」 | 商品を丁寧に包んでいる手元 | 横長 1600×1200px |
-| `feature-quality.jpg` | お約束 03「品揃えと品質」 | 商品が並んだ棚、ひまわりのある明るい写真など | 横長 1600×1200px |
-| `company-header.jpg` | 会社概要ページの一番上 | ひまわり畑（横に長く切り取れるもの） | 横長 2400×900px |
+| ファイル名 | 使われる場所 | 形・大きさ |
+| --- | --- | --- |
+| `hero.jpg` | トップ一番上（パソコン） | 横長 2400×1600px |
+| `hero-sp.jpg` | トップ一番上（スマホ） | 縦長 1200×1800px |
+| `about.jpg` | トップ「CONCEPT」の写真 | 縦長 1200×1500px |
+| `product-food.jpg` | 取扱商品「食品」 | 縦長 1000×1250px |
+| `product-beauty.jpg` | 取扱商品「美容品」 | 縦長 1000×1250px |
+| `product-supplement.jpg` | 取扱商品「サプリメント」 | 縦長 1000×1250px |
+| `product-daily.jpg` | 取扱商品「日用品」 | 縦長 1000×1250px |
+| `feature-shipping.jpg` | お約束 01「当日発送」 | 横長 1400×1050px |
+| `feature-packing.jpg` | お約束 02「丁寧な梱包」 | 横長 1400×1050px |
+| `feature-quality.jpg` | お約束 03「品揃えと品質」 | 横長 1400×1050px |
+| `company-header.jpg` | 会社概要ページの一番上 | 横長 2400×900px |
 
 ポイント
 
-- 写真は**JPEG（.jpg）**で、ファイル名は**半角英字・すべて小文字**のまま保存してください。
-- 大きさは目安です。形（横長・正方形など）が近ければ、はみ出た部分は自動で切り取られます。
-- `hero.jpg` はスマホでは**写真の中央部分**だけが表示されます。ひまわりが中央にある写真を選ぶときれいです。
-- ファイルが重いと表示が遅くなるので、1枚 **500KB 以下** を目安にしてください（https://squoosh.app/ などで無料で軽くできます）。
+- 写真は **JPEG（.jpg）** で、ファイル名は **半角英字・すべて小文字** のまま保存してください。
+- 大きさは目安です。形（縦長・横長）が近ければ、はみ出た部分は自動で切り取られます。
+- 取扱商品（`product-*.jpg`）は、自社の商品写真に差し替えることを想定しています。白や淡い色の背景で撮ると、今のデザインになじみます。
+- ファイルが重いと表示が遅くなるので、1枚 **400KB 以下** を目安にしてください（https://squoosh.app/ などで無料で軽くできます）。
 
 ### GitHub の画面で写真を差し替える手順
 
 1. リポジトリの `images` フォルダを開きます。
 2. 右上の「**Add file**」→「**Upload files**」を押します。
-3. 差し替えたい写真（例：`hero.jpg`）をドラッグして入れます。同じ名前のファイルは上書きされます。
+3. 差し替えたい写真（例：`product-food.jpg`）をドラッグして入れます。同じ名前のファイルは上書きされます。
 4. 下の「**Commit changes**」を押します。数分後に公開ページにも反映されます。
-
-### ひまわりの写真の探し方（無料・商用利用OK）
-
-- Unsplash：https://unsplash.com/ja/s/写真/ひまわり
-- Pexels：https://www.pexels.com/ja-jp/search/ひまわり/
-
-どちらも無料で商用利用でき、クレジット表記も必須ではありませんが、使った写真は下の「写真の出典」に書いておくと安心です。
 
 ## 写真の出典
 
-現在は仮の画像のため、外部サイトの写真は使用していません。
-写真を差し替えたら、次のように記録してください。
+すべて [Pexels](https://www.pexels.com/ja-jp/) の写真です（無料・商用利用可。クレジット表記は任意）。
+ライセンス：https://www.pexels.com/ja-jp/license/
+ホームページ用に、切り抜き・縮小して使っています。
 
-| ファイル名 | 撮影者 | 写真のページ（URL） | サイト |
-| --- | --- | --- | --- |
-| `hero.jpg` | （例）山田 太郎 | （例）https://unsplash.com/photos/xxxxx | Unsplash |
-| `about.jpg` |  |  |  |
-| `feature-shipping.jpg` |  |  |  |
-| `feature-packing.jpg` |  |  |  |
-| `feature-quality.jpg` |  |  |  |
-| `company-header.jpg` |  |  |  |
+| ファイル名 | 撮影者 | 写真のページ |
+| --- | --- | --- |
+| `hero.jpg` / `hero-sp.jpg` | Todd Trapani | https://www.pexels.com/photo/yellow-sunflower-field-under-blue-sky-and-white-clouds-5241874/ |
+| `company-header.jpg` | K Zoltan | https://www.pexels.com/photo/sunflower-garden-under-blue-sky-544554/ |
+| `about.jpg` | Carl Davis | https://www.pexels.com/photo/a-close-up-shot-of-a-sunflower-7740559/ |
+| `product-food.jpg` | horst | https://www.pexels.com/photo/two-decorative-jars-3066951/ |
+| `product-beauty.jpg` | Roman Odintsov | https://www.pexels.com/photo/relaxation-luxury-bathroom-soap-7691112/ |
+| `product-supplement.jpg` | Supplements On Demand | https://www.pexels.com/photo/capsules-in-the-plastic-bottle-13787561/ |
+| `product-daily.jpg` | Kaboompics.com | https://www.pexels.com/photo/stack-of-light-beige-towels-on-white-stool-4210372/ |
+| `feature-shipping.jpg` | Artem Podrez | https://www.pexels.com/photo/close-up-of-boxes-5025503/ |
+| `feature-packing.jpg` | Kampus Production | https://www.pexels.com/photo/close-up-of-person-packing-an-order-into-a-cardboard-box-7857523/ |
+| `feature-quality.jpg` | Kaboompics.com | https://www.pexels.com/photo/stack-of-natural-soap-brush-and-towels-4210374/ |
 
-※ `product-*.jpg` は自社の商品写真に差し替える予定のため、記載は不要です。
+写真を差し替えたら、この表も書き換えておくと安心です（自社で撮影した写真は記載不要です）。
 
 ## GitHub Pages で公開する手順
 

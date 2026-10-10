@@ -22,9 +22,9 @@
 | `about-packing.jpg` | 02 About Us（POINT 02） | Kampus Production | https://www.pexels.com/photo/close-up-of-person-packing-an-order-into-a-cardboard-box-7857523/ |
 | `about-items.jpg` | 02 About Us（POINT 03） | Supplements On Demand | https://www.pexels.com/photo/capsules-in-the-plastic-bottle-13787561/ |
 | `category.jpg` | 取扱カテゴリ | Roman Odintsov | https://www.pexels.com/photo/relaxation-luxury-bathroom-soap-7691112/ |
-| `office-main.jpg` | オフィス紹介（大） | Tima Miroshnichenko | https://www.pexels.com/photo/focused-woman-holding-a-parcel-while-looking-at-documents-6170183/ |
-| `office-check.jpg` | オフィス紹介（検品） | Tima Miroshnichenko | https://www.pexels.com/photo/woman-writing-down-on-a-carton-box-while-looking-at-a-clipboard-6169033/ |
-| `office-packing.jpg` | オフィス紹介（梱包） | Kampus Production | https://www.pexels.com/photo/a-woman-packing-her-merchandise-7857535/ |
+| `office-main.jpg` | オフィス紹介（大） | Pavel Danilyuk | https://www.pexels.com/photo/a-laptop-near-the-plant-and-documents-on-the-table-5520296/ |
+| `office-check.jpg` | オフィス紹介（検品） | Tima Miroshnichenko | https://www.pexels.com/photo/close-up-photo-of-person-holding-a-parcel-6170189/ |
+| `office-packing.jpg` | オフィス紹介（梱包） | Liza Summer | https://www.pexels.com/photo/crop-unrecognizable-woman-sticking-shipping-label-on-parcel-6348093/ |
 | `office-shipping.jpg` | オフィス紹介（伝票チェック） | Tima Miroshnichenko（※要確認） | https://www.pexels.com/photo/person-writing-on-paper-on-a-clipboard-6170191/ |
-| `office-staff.jpg` | オフィス紹介（スタッフ） | Ivan S | https://www.pexels.com/photo/woman-working-in-home-office-4240511/ |
+| `office-staff.jpg` | オフィス紹介（発送準備） | Polina Tankilevitch | https://www.pexels.com/photo/a-person-holding-a-package-in-a-plastic-container-and-cardboard-box-4440787/ |
 | `company.jpg` | 会社概要（写真） | Kristina Paukshtite | https://www.pexels.com/photo/yellow-sunflowers-in-clear-glass-vase-1427855/ |
